@@ -280,6 +280,13 @@ def get_action() -> str:
     ]
     action = inquirer.prompt(question, theme=loadth(theme))['action']
     return action
+def update_database2() -> None:
+    session = setup_session()
+
+    logger.info('Начинаю скачивание двух баз данных. Процесс может занять несколько минут...')
+
+    with open(file_query2, 'r') as file:
+        payload = json.load(file)
 
 
 def main() -> None:
