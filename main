@@ -98,6 +98,20 @@ def save_to_excel(wallets1: list, wallets2: list) -> None:
         "LZ Age In Days",
         "Initial Active Data"
     ]
+def save_to_excel_new(wallets1: list, wallets2: list) -> None:
+    pretty_columns = [
+        "Rankingon",
+        "User Addresson",
+        "Ranking Scoreon",
+        "Transactions Count",
+        "Bridged Amount ($)",
+        "Eth Total",
+        "Stables Total",
+        "Interacted Source Chains / Destination Chains / Contracts Count",
+        "Unique Active Days / Weeks/ Months",
+        "LZ Age In Days",
+        "Initial Active Data"
+    ]
 
     columns = list(wallets1[0].keys())
     columns.insert(5,"eth_total")
