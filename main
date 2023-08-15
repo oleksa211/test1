@@ -302,6 +302,12 @@ def update_database2() -> None:
     with open(file_query2, 'r') as file:
         payload = json.load(file)
 
+def make_table2() -> None:
+    exists1 = is_exists(file_data12)
+    exists2 = is_exists(file_data22)
+    if (not exists1 or not exists2):
+        logger.info('Файлы баз данных отстутствуют!')
+        update_database2()
 
 def main() -> None:
     art = text2art(text="LAYERZERO   STATS", font="standart")
