@@ -304,6 +304,13 @@ def make_table2() -> None:
         logger.info('Файлы баз данных отстутствуют!')
         update_database2()
 
+def make_table2_new) -> None:
+    exists1 = is_exists(file_data112)
+    exists2 = is_exists(file_data212)
+    if (not exists1 or not exists2):
+        logger.info('Файлы баз данных отстутствуют!')
+        update_databasenew_new3()
+
 def main() -> None:
     art = text2art(text="LAYERZERO   STATS", font="standart")
     print(colored(art,'light_blue'))
