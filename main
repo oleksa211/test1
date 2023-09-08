@@ -51,10 +51,8 @@ def filter_wallets2(wallet: dict) -> bool:
 
 
 def load_wallets() -> None:
-    global WALLETS
     with open(file_wallets, 'r') as file:
         WALLETS = [row.strip().lower() for row in file]
-
 
 def edit_dates1(wallets: list) -> None:
     for wallet in wallets:
