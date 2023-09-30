@@ -1,4 +1,4 @@
-var isValidNewBlock = (newBlock, previousBlock) => {
+var isValidNewBlock2 = (newBlock, previousBlock) => {
     if (previousBlock.index + 1 !== newBlock.index) {
         console.log('неверный индекс');
         return false;
